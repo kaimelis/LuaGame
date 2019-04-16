@@ -11,24 +11,164 @@
     <Filter Include="core">
       <UniqueIdentifier>{6b74ae51-a266-4ac9-905c-e94b25025a41}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{9645c502-622d-42b4-8cac-df180eb5cc77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Window">
+      <UniqueIdentifier>{c3d23a35-81e2-499a-911b-2ddd87400d8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\EventSystem">
+      <UniqueIdentifier>{758ea568-4665-4a63-b809-131007f191b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\StateSystem">
+      <UniqueIdentifier>{4166ff55-e49c-44b2-af9a-60a4153006c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\States">
+      <UniqueIdentifier>{f0c628c2-7f60-430a-a342-7b081948d47d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Resources">
+      <UniqueIdentifier>{7e30cf30-bf22-457b-9412-4c3dca60a06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\Utilities">
+      <UniqueIdentifier>{bdb84c9b-97c4-4132-8c01-2e4aebf2327e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\ECS">
+      <UniqueIdentifier>{f9915c05-5aa6-43c1-b89b-274ddf5861e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\GUI">
+      <UniqueIdentifier>{13fefd16-df4c-4b85-bb32-6bb7671dd57d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Game.cpp">
-      <Filter>core</Filter>
+    <ClCompile Include="Core\Window\Window.cpp">
+      <Filter>core\Window</Filter>
     </ClCompile>
-    <ClCompile Include="Core\MainGame.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Logic\Game.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\EventSystem\EventManager.cpp">
+      <Filter>core\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\StateSystem\StateManager.cpp">
+      <Filter>core\StateSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\States\State_Game.cpp">
+      <Filter>Logic\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\States\State_MainMenu.cpp">
+      <Filter>Logic\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\States\State_Intro.cpp">
+      <Filter>Logic\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\States\State_Paused.cpp">
+      <Filter>Logic\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ECS\GameObject.cpp">
+      <Filter>core\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\States\State_GameOver.cpp">
+      <Filter>Logic\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\States\State_Win.cpp">
+      <Filter>Logic\States</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\Game.hpp">
-      <Filter>core</Filter>
+    <ClInclude Include="Core\Window\Window.hpp">
+      <Filter>core\Window</Filter>
     </ClInclude>
-    <ClInclude Include="Core\MainGame.hpp">
+    <ClInclude Include="Logic\Game.hpp">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\EventSystem\EventManager.hpp">
+      <Filter>core\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StateSystem\BaseState.hpp">
+      <Filter>core\StateSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StateSystem\StateManager.hpp">
+      <Filter>core\StateSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedContext.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Logic\States\State_Game.hpp">
+      <Filter>Logic\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\States\State_MainMenu.hpp">
+      <Filter>Logic\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\States\State_Intro.hpp">
+      <Filter>Logic\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\States\State_Paused.hpp">
+      <Filter>Logic\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Resources\ResourceManager.hpp">
+      <Filter>core\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Resources\AudioManager.hpp">
+      <Filter>core\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Resources\FontManager.hpp">
+      <Filter>core\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Resources\TextureManager.hpp">
+      <Filter>core\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utilities\Utilities.hpp">
+      <Filter>core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utilities\RandomGenerator.h">
+      <Filter>core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utilities\Helpers.hpp">
+      <Filter>core\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ECS\GameObject.hpp">
+      <Filter>core\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\States\State_GameOver.hpp">
+      <Filter>Logic\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\States\State_Win.hpp">
+      <Filter>Logic\States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LUA\Eadweard.lua">
+      <Filter>LUA</Filter>
+    </None>
+    <None Include="LUA\Eymar.lua">
+      <Filter>LUA</Filter>
+    </None>
+    <None Include="LUA\Hjoerleifur.lua">
+      <Filter>LUA</Filter>
+    </None>
+    <None Include="LUA\Imi.lua">
+      <Filter>LUA</Filter>
+    </None>
+    <None Include="LUA\Joker.lua">
+      <Filter>LUA</Filter>
+    </None>
+    <None Include="LUA\Boost.lua">
+      <Filter>LUA</Filter>
+    </None>
+    <None Include="LUA\Domi.lua">
+      <Filter>LUA</Filter>
+    </None>
+    <None Include="LUA\Freeze.lua">
+      <Filter>LUA</Filter>
+    </None>
+    <None Include="LUA\Heal.lua">
+      <Filter>LUA</Filter>
+    </None>
+    <None Include="LUA\Juri.lua">
+      <Filter>LUA</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -1,12 +1,13 @@
-#include "Core/Game.hpp"
-#include "Core/MainGame.hpp"
+#include "Logic/Game.hpp"
 
-int main()
+int main(int argc, void** argv[])
 {
-	Game* game = new MainGame();
-	game->initialize();
-	game->run();
-	
-	delete game;
+	Game game;
+	while (!game.GetWindow()->isDone())
+	{
+		game.Update();
+		game.Render();
+		game.LateUpdate();
+	}
 	return 0;
 }
