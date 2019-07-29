@@ -1,4 +1,4 @@
 # LuaGame
-Lua implementation with C++ custom engine
+Making own 2D mini engine to learn how to implement Lua usage in engine allowng easy scripting.
 
-![My image](kaimelis/LuaGame/blob/master/CustomEngine/CustomEngine/Assets/stats.PNG)
+![My image](CustomEngine/CustomEngine/Assets/stats.PNG)
